@@ -3,16 +3,16 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["StorageAccount.csproj", "./"]
-RUN dotnet restore "StorageAccount.csproj"
+COPY ["AzureIotDeviceOperations.csproj", "./"]
+RUN dotnet restore "AzureIotDeviceOperations.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "StorageAccount.csproj" -c Release -o /app/build
+RUN dotnet build "AzureIotDeviceOperations.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "StorageAccount.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "AzureIotDeviceOperations.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "StorageAccount.dll"]
+ENTRYPOINT ["dotnet", "AzureIotDeviceOperations.dll"]
