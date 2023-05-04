@@ -14,6 +14,6 @@ apiVersion : apps/v1
 	    spec:
 	      containers:
 	        - name: iotdeviceapi 
-	          image: azstorageapi.azure.io/iotdeviceapi
+	          image: iotdeviceapiacr.azurecr.io/iotdeviceapi
 	          ports:
 	          - containerPort: 80
