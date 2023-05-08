@@ -11,7 +11,7 @@ namespace AzureIotDeviceOperations.Services
         private static DeviceClient? deviceClient;
         private static RegistryManager? registryManager;
         private static string iotHubUri = "MyLTIIoTHub1.azure-devices.net";
-        private static string iotHubConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=oc/+3O7+tvIXFZ361KodB3DjDENrM1hAlTgCm4R98XY=";
+        private static string iotHubConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=+mDSMHwMsHfLeLZOeOr3lKYSKLJWdqr96zF1YZ8whfw=";
 
         public static DeviceClient AddDevice(string deviceName, bool isIoTEdge)
         {
