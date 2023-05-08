@@ -11,10 +11,10 @@ namespace AzureIotDeviceOperations.Services
 {
     public class ManageIOTDeviceCommunicationService
     {
-        static string DeviceConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;DeviceId=iotdevice1;SharedAccessKey=nS8/rpT1XqpvGNlSFflBnL9L8KHZnZTM8ctaBXMRl2s=";
+        static string DeviceConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;DeviceId=iotdevice1;SharedAccessKey=mbafhxweSmR1d9VONhOCbXlju+oBR1XYCOAUhFq0s3I=";
         static DeviceClient Client = null;
         static RegistryManager registryManager;
-        private static string iotHubConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=+mDSMHwMsHfLeLZOeOr3lKYSKLJWdqr96zF1YZ8whfw=";
+        private static string iotHubConnectionString = "HostName=MyLTIIoTHub1.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=a3dV1pbw1vqoaib5w6G2Vl9qxri2zdH4B2+PdCnDanw=";
 
         public ManageIOTDeviceCommunicationService(IConfiguration configuration)
         {
