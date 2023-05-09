@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'iotdeviceapp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6A3B91BE527F4390ACB26E066780E6E5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC628F5891DD4D09B5EEF489D76D4181 }}
           package: .
